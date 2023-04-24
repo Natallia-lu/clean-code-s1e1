@@ -3,7 +3,7 @@
 
 var taskInput = document.getElementById("new-task");
 var addButton = document.getElementsByTagName("button")[0];
-var incompleteTaskHolder = document.getElementById("incompleteTasks");
+var incompleteTaskHolder = document.getElementById("todo-tasks");
 var completedTasksHolder = document.getElementById("completed-tasks");
 
 //New task list item
@@ -52,7 +52,7 @@ var editTask = function() {
     var editInput = listItem.querySelector('input[type=text]');
     var label = listItem.querySelector("label");
     var editBtn = listItem.querySelector(".edit");
-    var containsClass = listItem.classList.contains("editMode");
+    var containsClass = listItem.classList.contains("edit-mode");
 
     if(containsClass) {
         label.innerText=editInput.value;
